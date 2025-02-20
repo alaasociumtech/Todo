@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 3px solid black;
+}
+
+.btn-new {
+  background-color: #28a745;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-new:hover {
+  background-color: #218838;
+}
+
+.tabs {
+  margin-top: 15px;
+}
+
+.tab {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: gray;
+}
+
+.tab.active {
+  font-weight: bold;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.task-list {
+  margin-top: 20px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+}
+
+.task .task-name {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.task .task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.task .task-actions button {
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.task .task-actions .edit {
+  background: yellow;
+  color: black;
+}
+
+.task .task-actions .delete {
+  background: red;
+  color: white;
+}
+
+#input-card {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 681px;
+  height: 390px;
+  left: 379px;
+  top: 122px;
+
+  background: rgba(255, 255, 255, 0.29);
+  border: 1px solid #e0dcdc;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+#input-card input {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 588px;
+  height: 61px;
+  left: 52px;
+  top: 42px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#input-card input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#input-card textarea {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 597px;
+  height: 175px;
+  left: 47px;
+  top: 123px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#input-card textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#cancel {
+  position: absolute;
+  width: 191px;
+  height: 57px;
+  left: 387px;
+  top: 314px;
+
+  background: #595656;
+  border-radius: 10px;
+}
+
+#add {
+  position: absolute;
+  width: 191px;
+  height: 57px;
+  left: 170px;
+  top: 314px;
+  color: #ffffff;
+  background: #19b65f;
+  border-radius: 10px;
+}
+
+#add-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  padding: 8px;
+}
+#cancel-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+}
+
+#no-tasks-message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  opacity: 0.7;
+}
